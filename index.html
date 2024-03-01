@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySQL y MongoDB</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5">MySQL</h2>
+
+        <h3 class="mt-4">Vistas en MySQL</h3>
+        <p>Las vistas en MySQL son consultas SQL predefinidas almacenadas como objetos de base de datos. Permiten acceder y manipular datos de manera estructurada y organizada. Además, ofrecen ventajas como la ocultación de datos innecesarios, mejor control de permisos y mejora del rendimiento.</p>
+        <pre><code>CREATE VIEW users_view AS
+    SELECT nombres, apellidos, edad, genero
+    FROM users;</code></pre>
+
+        <h3 class="mt-4">Procedimientos Almacenados</h3>
+        <p>Los procedimientos almacenados en MySQL permiten reutilizar código, mejorar el rendimiento y garantizar la seguridad de los datos. Son una herramienta poderosa para simplificar el desarrollo de aplicaciones al proporcionar una abstracción de la base de datos.</p>
+
+        <h3 class="mt-4">Diferencias entre SQL y NoSQL</h3>
+        <p>La diferencia principal radica en su enfoque para el almacenamiento y recuperación de datos. SQL se basa en un modelo relacional y utiliza un lenguaje estandarizado, mientras que NoSQL ofrece enfoques alternativos y flexibles adaptados a diferentes necesidades y escenarios.</p>
+
+        <h2 class="mt-5">MongoDB</h2>
+        <p>MongoDB es un sistema de gestión de bases de datos NoSQL que utiliza documentos flexibles en lugar de tablas y filas. Proporciona un entorno altamente escalable y flexible para almacenar y consultar diversos tipos de datos.</p>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

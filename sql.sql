@@ -1,4 +1,4 @@
--- Active: 1709300128838@@bqzmyhss2j8trrlrgcul-mysql.services.clever-cloud.com@3306@bqzmyhss2j8trrlrgcul
+-- Active: 1709057024495@@bvx4jdsoc1mozxryzzns-mysql.services.clever-cloud.com@3306@bvx4jdsoc1mozxryzzns
 SHOW DATABASES
 
 /*EJEMPLOS DE VIEWS*/
@@ -102,6 +102,20 @@ CALL nuevo_usuario ('Sebastian', 'Hernandez Gil','sebs@gmail.com', 30, 'H', 'Col
 DELIMITER ;
 
 SELECT * FROM users ORDER BY id DESC
+
+
+/*5*/
+DELIMITER //
+CREATE PROCEDURE actualizar_edad (IN edad_usuario INT,
+IN id_usuario INT(10)) 
+BEGIN 
+	UPDATE users SET edad = edad_usuario WHERE id = id_usuario;
+END//
+DELIMITER;
+
+CALL actualizar_edad (17, 2)
+
+SELECT * FROM users
 
 
 
